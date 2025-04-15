@@ -6,5 +6,6 @@
 
 ![CEESP grupo de pesquisa](https://raw.githubusercontent.com/bernardogoltz/quicktl/refs/heads/master/assets/logo_ceespufsm.png?token=GHSAT0AAAAAADCJKSRP2J2SAYXUM7GIDXG2Z76VWSA)
 
-## Sobre
+## Sobre [... em construção]
+
 Repositório para otimizar parâmetros de projeto de Linhas de Transmissão. 
