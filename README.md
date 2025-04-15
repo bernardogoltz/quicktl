@@ -4,8 +4,19 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dash.svg?color=dark-green)](https://pypi.org/project/dash/)
 
 
-![CEESP grupo de pesquisa](https://raw.githubusercontent.com/bernardogoltz/quicktl/refs/heads/master/assets/logo_ceespufsm.png?token=GHSAT0AAAAAADCJKSRP2J2SAYXUM7GIDXG2Z76VWSA)
+![CEESP grupo de pesquisa](assets/logo_ceespufsm.png)
 
 ## Sobre [... em construção]
+ 
+### A fazer - operação global do sistema
+1. Condições nominais de operação -> Condutor que minimiza custos globais de operação
+
+
+2. *Input do usuário*: parametros da linha -> *Outputs*: RLC, XL, YLT , XLT, Bc, Zc, GamaL, A , B , C , Ye/2 ,
+
+3. *Input* Carga , Vpu *Output*: Vr, Vs , Ir , Is, VR0 , RT , Xr , Xt , Sr. 
+
+
+
 
 Repositório para otimizar parâmetros de projeto de Linhas de Transmissão. 
