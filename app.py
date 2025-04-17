@@ -2,7 +2,7 @@
 """
 Created on Thu Apr 17 14:33:41 2025
 
-@author: Bernardo
+@author: Bernardo Ivo Goltz
 """
 
 import streamlit as st
@@ -24,8 +24,16 @@ input[type="number"] {
 </style>
 ''', unsafe_allow_html=True)
 
-# Título da aplicação
+# Título da aplicação e badges
 st.title("Otimização de Condutores")
+st.markdown(
+    "[![GitHub Profile](https://img.shields.io/badge/GitHub-bernardogoltz-181717?style=flat&logo=github)](https://github.com/bernardogoltz)\n"
+    "[![LinkedIn](https://img.shields.io/badge/LinkedIn-Bernardo_Ivo_Goltz-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/bernardogoltz)"
+    "\n\nBernardo Ivo Goltz \n\n"
+    
+    "\n\nUFSM - ESP1074 - SISTEMAS DE TRANSMISSÃO DE ENERGIA ELÉTRICA \n\nProfessor Maurício Sperandio\n\n"
+    
+)
 
 # Sidebar: parâmetros de entrada
 st.sidebar.header("Parâmetros do Projeto")
@@ -149,3 +157,5 @@ if st.sidebar.button("Calcular"):
     # Exibe tabela final
     st.markdown("### Custo Mínimo de Operação por Número de Condutores")
     st.dataframe(df_minimos)
+
+   
