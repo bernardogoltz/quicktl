@@ -4,8 +4,7 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dash.svg?color=dark-green)](https://pypi.org/project/dash/)
 
 
-![logo](assets/logo_ceespufsm.png)
-
+https://quicktl-a6zhvyaex8fdzb8zxds5ed.streamlit.app/
 ## Sobre [... em construção]
  
 ### A fazer - operação global do sistema
