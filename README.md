@@ -4,7 +4,7 @@
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dash.svg?color=dark-green)](https://pypi.org/project/dash/)
 
 
-![CEESP grupo de pesquisa](assets/logo_ceespufsm.png)
+![logo](assets/logo_ceespufsm.png)
 
 ## Sobre [... em construção]
  
