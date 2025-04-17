@@ -61,10 +61,10 @@ def calculate_parameters(df: pd.DataFrame, T: float, S: float, V: float,
       Tuple contendo o DataFrame com os novos cálculos e o valor da corrente.
     """
     corrente = S / (np.sqrt(3) * V)
-    
+    print(corrente)
     # Ajuste da resistência com temperatura: R = R20 * (1 + α(T - 20))
     df['R'] = df['R20'] * (1 + df['alpha (1/°C)'] * (T - 20))
-    
+   
     # Cálculo das perdas Joule e custo associado
     df['PerdaJoule'] = (corrente ** 2) * df['R']
     df['CustoJoule'] = 8760 * df['PerdaJoule'] * 0.000001 * FP * CME
@@ -169,10 +169,10 @@ def main():
     T = 100
     S = 1000E6
     V = 500E3
-    FC = 0.9
+    FC = 0.8
     FP = 0.672
     k = 0.2
-    CME = 300
+    CME = 150
     n = 30
     taxa = 0.08
     file_path = 'data/condutores.csv'
@@ -199,6 +199,24 @@ def main():
          'melhores_opcoes_df': melhores_opcoes_df,
          'parametros_str': parametros_str
     }
+
+def resumo_operacao(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Para cada número de condutores (1–4), retorna o valor
+    mínimo de CustoTotal_n e o Code word associado.
+    """
+    lista = []
+    for n_cond in [1, 2, 3, 4]:
+        coluna = f'CustoTotal_{n_cond}'           # nome da coluna
+        minimo = df[coluna].min()                 # valor mínimo
+        code   = df.loc[df[coluna] == minimo,     # busca a linha
+                        'Code word'].iloc[0]      # e extrai o Code word
+        lista.append({
+            'n_condutores': n_cond,
+            'Code word':    code,
+            'CustoOperacao': minimo
+        })
+    return pd.DataFrame(lista)
 
 # =============================================================================
 # EXECUÇÃO PRINCIPAL
