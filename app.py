@@ -65,7 +65,7 @@ except ValueError:
 V = V_kv * 1e3
 
 # Outros parâmetros (texto inputs)
-FC_str = st.sidebar.text_input("Fator de Correção (FC)", "0.8")
+FC_str = st.sidebar.text_input("Fator de Carga (FC)", "0.8")
 try:
     FC = float(FC_str)
 except ValueError:
@@ -93,7 +93,7 @@ except ValueError:
     st.sidebar.error("CME deve ser um número")
     CME = 0.0
 
-n_str = st.sidebar.text_input("Períodos (n)", "30")
+n_str = st.sidebar.text_input("Período de operacao (anos)", "30")
 try:
     n = int(n_str)
 except ValueError:
