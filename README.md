@@ -28,7 +28,10 @@ https://quicktl-a6zhvyaex8fdzb8zxds5ed.streamlit.app/
 
      2.3 **Eq. da LT** Gama_l, Z0, ZC ... Finalizar equacionamento e comecar sintese da lt com carga item [3] ; 
 
-3. **Simulacao** // *Input* Carga , Vpu *Output*: Vr, Vs , Ir , Is, VR0 , RT , Xr , Xt , Sr. 
+     #### 2.4 Conclusao Sessao [2] 
+    Receber caracteristicas construtivas da LT ou calcula-las / otimizar...
+
+1. **Simulacao** // *Input* Carga , Vpu *Output*: Vr, Vs , Ir , Is, VR0 , RT , Xr , Xt , Sr. 
 
 
 
