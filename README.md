@@ -11,12 +11,24 @@ https://quicktl-a6zhvyaex8fdzb8zxds5ed.streamlit.app/
 ## Sobre [... em construção]
  
 ### A fazer - operação global do sistema
-1. Condições nominais de operação -> Condutor que minimiza custos globais de operação
+1. ✅ **Escolha do Condutor Ideal** ondições nominais de operação -> Condutor que minimiza custos globais de operação
 
+2. *️⃣ **Cálculo do Parametros** da LT
+   
+  
+   2.1 **Reatancia Indutiva** 
+   rmg , dmg . Z = R+jX_l
+    
+        L = 2*1E-4*ln(DMG/RMG_l) 
 
-2. *Input do usuário*: parametros da linha -> *Outputs*: RLC, XL, YLT , XLT, Bc, Zc, GamaL, A , B , C , Ye/2 ,
+        X_L = 75,39822*ln(DMG/RMG_l)  @ 60hz
+    2.2 **Reatancia Capacitiva** diametro, distancia media geometrica , altura media em rel. ao solo
 
-3. *Input* Carga , Vpu *Output*: Vr, Vs , Ir , Is, VR0 , RT , Xr , Xt , Sr. 
+    $$C = \frac{2\pi \cdot \varepsilon_0}{\ln\left(\frac{DMG}{RMG_C}\right) - \sigma} $$
+
+     2.3 **Eq. da LT** Gama_l, Z0, ZC ... Finalizar equacionamento e comecar sintese da lt com carga item [3] ; 
+
+3. **Simulacao** // *Input* Carga , Vpu *Output*: Vr, Vs , Ir , Is, VR0 , RT , Xr , Xt , Sr. 
 
 
 
